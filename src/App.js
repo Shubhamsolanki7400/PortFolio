@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Experience from "../src/components/Experience"
 import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
+import Particles from "react-tsparticles";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ function App() {
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home ratio={ratio} />
       <Work />
-      <Experience/>
+      <Experience />
       <Services />
       <Testimonials />
       <Contact />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import vector from "../../../port-folio/src/assets/vector.png"
+import vector from "../assets/vector.png"
 import { toast } from 'react-hot-toast'
 import {motion} from "framer-motion"
 import {addDoc,collection} from "firebase/firestore";

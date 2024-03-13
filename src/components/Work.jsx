@@ -1,7 +1,7 @@
 import React from 'react'
-import data from "../assets/data.json"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
+  import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
+import projects from './data'
 
 const Work = () => {
   return (
@@ -19,7 +19,7 @@ const Work = () => {
                 autoPlay={true}
 
                 >
-                {data.projects.map((i) => (
+                {projects?.map((i) => (
               <div key={i.title} className="workItem">
                 <img src={i.imgSrc} alt={i.title} />
                 <aside>

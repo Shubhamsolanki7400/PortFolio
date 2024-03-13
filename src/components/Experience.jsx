@@ -1,10 +1,11 @@
 import React from 'react'
-import data from '../assets/data.json'
+import data from './data'
+import projects from './data';
 const Experience = () => {
   return (
     <div id="experience">
     <div className="timelineBox">
-      {data.projects.map((item, index) => (
+      {projects?.map((item, index) => (
         <TimelineItem
           heading={item.title}
           text={item.date}

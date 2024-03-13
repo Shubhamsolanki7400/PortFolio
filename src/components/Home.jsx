@@ -10,7 +10,7 @@ const Home = ({ ratio }) => {
 
 const animationClientsCount = () => {
   console.log("animationClientsCount triggered");
-  animate(0, 100, {
+  animate(0, 10, {
     duration: 1,
     onUpdate: (v) => {
       console.log("Client Count Update:", v);
@@ -75,12 +75,12 @@ const animationClientsCount = () => {
           <article>
             <p>
               +
-              {ratio < 2 && (
+              {ratio < 3 && (
                 <motion.span
                   whileInView={animationClientsCount}
                   ref={clientCount}
                 >
-                100
+                10  
                 </motion.span>
               )}
             </p>
